@@ -1,0 +1,25 @@
+{% extends 'productos/base.html' %}
+
+
+
+{% block mensaje1 %}
+Vista para agregar con vencimiento!!
+
+{% endblock mensaje1 %}
+
+
+{% block mensaje2 %}
+Por favor ingresar datos!
+{% endblock mensaje2 %}
+
+
+{% block contenido %}
+  <form method="post">{% csrf_token %}
+
+        {{ form_perece.as_p }}
+
+        <input type="submit" value="Crear">
+    </form>
+{% endblock contenido %}
+
+      

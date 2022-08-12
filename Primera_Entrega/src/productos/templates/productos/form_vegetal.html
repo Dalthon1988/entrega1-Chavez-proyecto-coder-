@@ -1,0 +1,25 @@
+{% extends 'productos/base.html' %}
+
+
+
+{% block mensaje1 %}
+Vista para agregar vegetales!!
+
+{% endblock mensaje1 %}
+
+
+{% block mensaje2 %}
+asdasd
+{% endblock mensaje2 %}
+
+
+{% block contenido %}
+  <form method="post">{% csrf_token %}
+
+        {{ form_vege.as_p }}
+
+        <input type="submit" value="Crear">
+    </form>
+{% endblock contenido %}
+
+      
